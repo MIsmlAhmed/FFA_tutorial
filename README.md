@@ -1,5 +1,5 @@
 # Flood Frequency Analysis Tutorial
-A tutorial on flood frequency analysis using R.
+A tutorial on flood frequency analysis using R for the Bow River at Banff gauge `05BB001`.
 
 # Used packages
 
@@ -21,7 +21,9 @@ This process will take time to download the database (~ 1.5GB)
 
 # How to use the script
 
-The script only needs a WSC gauge id and it will extract the annual maximum timeseris and fit the following distributions: `GEV`, `Pearson Type-3`, `Gamma`, and `Normal`
+The script only needs a WSC gauge id and it will extract the annual maximum timeseries and fit the following distributions: `Generalized Extreme Value`, `Pearson Type-3`, `Gamma`, and `Normal`
+
+The script also provides different quantiles calculated bt `Generalized Extreme Value` and `Pearson Type-3` (best-fit distributions for this case) for the following return periods: 5, 10, 25, 50, and 100 years.
 
 Users can fit other distributions available within the `LMoFit` package.
 
